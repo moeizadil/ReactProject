@@ -7,7 +7,7 @@ const RestaurantCard= (props)=> {
     const {restData} = props
     return(
       <div className="res-card" style={cardStyle}>
-      <img className="res-logo"   src={restData.imageUrl}></img>
+      <img className="res-logo"   src={restData?.imageUrl}></img>
   
         <h3> {restData.name}</h3>
         <h5>{restData.cuisine}</h5>
