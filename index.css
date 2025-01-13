@@ -27,7 +27,7 @@
     padding: 0;
 }
 
-.nav-items > ul > li {
+.nav-items > ul > :link {
     padding: 10px 15px;
     margin: 0 8px;
     cursor: pointer;
@@ -35,7 +35,7 @@
     transition: color 0.3s ease;
 }
 
-.nav-items > ul > li:hover {
+.nav-items > ul > :link:hover {
     color: #007bff;
 }
 

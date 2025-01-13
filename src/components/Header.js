@@ -1,3 +1,5 @@
+import { Link } from "react-router"
+
 const Header = ()=> {
     return(
       <div className="header">
@@ -6,10 +8,10 @@ const Header = ()=> {
         </div>
         <div className="nav-items">
           <ul>
-            <li> Home </li>
-            <li> About Us </li>
-            <li> Contact US </li>
-            <li> Cart </li>
+            <Link to="/"> Home </Link>
+            <Link to="about"> About Us </Link>
+            <Link to="contact"> Contact US </Link>
+            <Link> Cart </Link>
   
           </ul>
         </div>
