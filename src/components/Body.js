@@ -3,6 +3,7 @@ import { useState,useEffect } from "react"
 import restaurantList from "../utils/mockData"
 import Shimmer from "./Shimmer"
 import { Link } from "react-router"
+import useOnlineStatus from "../utils/customHooks/useOnlineStatus"
 
 const Body = ()=> {
   console.log("Body comp")
@@ -38,6 +39,10 @@ const Body = ()=> {
       //   // setResList(prodResList)
       //   // setFilteredResList(prodResList)
       // }, 1000);
+    }
+    const onlineStatus = useOnlineStatus()
+    if(onlineStatus==false){
+      return <h1>Opps Your internet is offline , Please check your internet</h1>
     }
     //Shimmer UI concept 
     return resList.length == 0 ? <Shimmer count={10}></Shimmer>  : (

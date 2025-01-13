@@ -5,7 +5,6 @@ const cardStyle = {
  
 const RestaurantCard= (props)=> {
     const {info} = props.restData
-    console.log("Id are",info.id)
     return(
       <div className="res-card" style={cardStyle}>
       <img className="res-logo"   src={ "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + info?.cloudinaryImageId}></img>

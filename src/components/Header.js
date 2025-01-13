@@ -1,6 +1,8 @@
 import { Link } from "react-router"
+import useOnlineStatus from "../utils/customHooks/useOnlineStatus"
 
 const Header = ()=> {
+  const onlineStatus = useOnlineStatus()
     return(
       <div className="header">
         <div className="logoContainer">
@@ -8,10 +10,13 @@ const Header = ()=> {
         </div>
         <div className="nav-items">
           <ul>
-            <Link to="/"> Home </Link>
+            <li>Online Status : {onlineStatus ? "✅" : "🔴"}</li>
+            <Link className= "nav-items" to="/"> Home </Link>
             <Link to="about"> About Us </Link>
             <Link to="contact"> Contact US </Link>
             <Link> Cart </Link>
+            <Link to="grocery"> Grocery </Link>
+
   
           </ul>
         </div>

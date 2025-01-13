@@ -17,6 +17,15 @@
     width: 140px;
     cursor: pointer;
 }
+.nav-items  {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
 
 .nav-items > ul {
     display: flex;
