@@ -26,3 +26,17 @@ React Project
 //   </div>
 // );
 
+# Redux tool kit   
+
+-Libraries:
+    -Install @reduxjstoolkit
+    -intall react redux 
+
+-Build a store
+-Connect a store
+-creeate a slice
+dispatch action
+
+
+
+
